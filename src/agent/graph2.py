@@ -91,20 +91,3 @@ graph.add_edge("retrieval_qa", END)
 
 qa_graph = graph.compile()
 
-'''
-import asyncio
-
-async def main():
-    question = input("Enter your question: ")
-    result = qa_graph.invoke({
-        "file_bytes": BytesIO(),  # placeholder
-        "file_name": "",
-        "question": question,
-        "documents": [],
-        "answer": "",
-    })
-    print("\n✅ Answer:\n", result["answer"])
-
-if __name__ == "__main__":
-    asyncio.run(main())
-'''
